@@ -36,7 +36,6 @@ app.use(express.static(path.join(__dirname, 'public'))) // to use public folder 
   app.get("/read",async (req, res) => {
     // let userData = await userModel.findOne();
     const allUsers = await userModel.find();
-    console.log(allUsers)
     res.render('read', {users:allUsers})
   })
 
