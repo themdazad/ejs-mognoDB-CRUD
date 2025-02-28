@@ -60,6 +60,6 @@ app.use(express.static(path.join(__dirname, 'public'))) // to use public folder 
 
 
 app.listen(port, () => {
-  console.log(`Express is listening on port http://localhost:${port}`);
+  console.log(`Express is listening.`);
 });
 ``
